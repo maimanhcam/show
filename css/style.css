@@ -78,8 +78,6 @@ body {
 .address-heard {
     width: 100%;
     float:left;
-    padding-left: 15px;
-
 }
 .navbar-none {
     margin-bottom:0;
@@ -92,6 +90,16 @@ body {
 }
 #menu-center >li >a {
     font-size: 14px;
+}
+@media (min-width: 1400px) {
+    .address-heard {
+        width: 100%;
+        float:left;
+        padding-left: 170px;
+    }
+    #menu-center li {
+        padding: 0 90px;
+    }
 }
 /*.menu-text {*/
     /*width: 100%;*/
@@ -455,6 +463,10 @@ span.flag {
 .footer-pad h4{
     text-align: center;
     color:#ffffff ;
+    padding-bottom: 5px;
+}
+.footer-pad {
+    padding-top: 15px;
 }
 .footer-pad li {
     float: left;
@@ -466,4 +478,9 @@ a:hover{
 }
 .contacts-info {
     color: #ffffff;
+}
+/*about*/
+.page {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
 }
