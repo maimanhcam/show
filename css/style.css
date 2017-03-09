@@ -4,6 +4,10 @@ body {
     vertical-align: middle;
     font-family: 'Roboto', sans-serif;
 }
+.category-img-with img {
+    width: 100%;
+    vertical-align: middle;
+}
 .log img {
     width: 100%;
 }
@@ -91,7 +95,17 @@ body {
 #menu-center >li >a {
     font-size: 14px;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
+    .address-heard {
+        width: 100%;
+        float:left;
+        padding-left: 170px;
+    }
+    #menu-center li {
+        padding: 0 55px;
+    }
+}
+@media (min-width: 1900px) {
     .address-heard {
         width: 100%;
         float:left;
@@ -484,3 +498,66 @@ a:hover{
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
 }
+/*!*------------------------------category------------------*!*/
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+    border: none;
+    float: left;
+}
+
+.rating > input { display: none; }
+.rating > label:before {
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating > .half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.rating > label {
+    color: #ddd;
+    float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  }
+.category-setwith img {
+    width: 100%;
+    vertical-align: middle;
+}
+.category-img-with {
+    width: 28%;
+}
+.category-product {
+    padding: 0px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.category-product-title {
+    width: 69%;
+    float: left;
+    text-align: left;
+    padding: 10px 16px;
+    padding-top: 7px;
+    padding-bottom: 4px;
+}
+
