@@ -9,7 +9,16 @@ body {
     width: 100%;
     vertical-align: middle;
 }
-
+.category-title h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    background: #C52D2F;
+    padding: 5px;
+    border-radius: 4px;
+}
 .log img {
     width: 100%;
 }
@@ -21,7 +30,7 @@ body {
 }
 
 .position-re-tour {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 @media (min-width: 1200px) {
@@ -307,55 +316,6 @@ span.new {
 
 /*ưidget*/
 
-.ribbon {
-    width: 100%;
-    position: relative;
-    background: #0CC5F4;
-    height: 77px;
-    margin: 40px auto;
-}
-
-.ribbon::before, .ribbon::after {
-    content: "";
-    position: absolute;
-    display: block;
-    bottom: -25px;
-    border: 40px solid #0CC5F4;
-    z-index: -1;
-}
-
-.ribbon::before {
-    left: -75px;
-    border-right-width: 60px;
-    border-left-color: transparent;
-}
-
-.ribbon::after {
-    right: -75px;
-    border-left-width: 60px;
-    border-right-color: transparent;
-}
-
-.ribbon .ribbon-fold:before,
-.ribbon .ribbon-fold:after {
-    content: "";
-    position: absolute;
-    display: block;
-    border-style: solid;
-    border-color: #0CC5F4 transparent transparent transparent;
-    bottom: -25px;
-}
-
-.ribbon .ribbon-fold:before {
-    left: 0;
-    border-width: 25px 0 0 25px;
-}
-
-.ribbon .ribbon-fold:after {
-    right: 0;
-    border-width: 25px 25px 0 0;
-}
-
 /*-------footer*/
 .social .fb a:before {
     content: "\f09a";
@@ -597,6 +557,9 @@ a:hover {
 }
 
 /*!*------------------------------category------------------*!*/
+.wow {
+    padding-top: 20px;
+}
 .section-pd {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -668,12 +631,103 @@ a:hover {
 }
 
 .category-top {
-    padding: 15px;
     margin-bottom: 30px;
-    border: 1px solid #DBDBDB;
 }
 
 .example {
     margin: 20px;
     text-align: center;
+}
+
+.breadcrumb-bg {
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.vid {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.vid iframe,
+.vid object,
+.vid embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.product-tabs {
+    line-height: normal;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 2px solid #e5e5e5;
+    margin-top: 0px;
+    height: 35px;
+    text-align: left;
+}
+.product-tabs li.active {
+    background: none;
+}
+.product-tabs li {
+    display: inline-block;
+    height: auto;
+    line-height: normal;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    list-style: none;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    border: none;
+    border-bottom: 2px solid #305CB7;
+    background: #305CB7;
+    color: #fff;
+}
+.nav-tabs.product-tabs > li > a {
+    margin-right: 0px;
+    line-height: 1.42857143;
+    border-radius: 0px;
+    border: none;
+    padding: 10px 12px;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    font-weight: 500!important;
+}
+.tab-content {
+    margin-bottom: 30px;
+    margin-top: 15px;
+    font-family: Arial;
+    font-size: 15px;
+}
+.tab-content > .active {
+    margin-top: 15px;
+}
+.right-hotline {
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 1px solid #DBDBDB;
+}
+.right-hotline h4 {
+    border-bottom: 1px solid #DBDBDB;
+    padding-bottom: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #305CB7;
+}
+.right-hotline p {
+    margin-top: 10px;
+    font-size: 14px;
 }
