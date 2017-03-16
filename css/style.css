@@ -9,6 +9,7 @@ body {
     width: 100%;
     vertical-align: middle;
 }
+
 .category-title h2 {
     color: #fff;
     text-align: center;
@@ -19,10 +20,6 @@ body {
     padding: 5px;
     border-radius: 4px;
 }
-.log img {
-    width: 100%;
-}
-
 .position {
     position: relative;
     height: 120px;
@@ -42,6 +39,10 @@ body {
     .logo-positon {
         padding-left: 80px;
     }
+}
+
+.logo-positon img {
+    width: 100%;
 }
 
 .logo-positon {
@@ -135,6 +136,7 @@ body {
         padding: 0 55px;
     }
 }
+
 
 @media (min-width: 1900px) {
     .address-heard {
@@ -560,6 +562,7 @@ a:hover {
 .wow {
     padding-top: 20px;
 }
+
 .section-pd {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -624,7 +627,7 @@ a:hover {
 }
 
 .category-product {
-    padding: 0px;
+    padding-bottom: 10px;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -632,6 +635,16 @@ a:hover {
 
 .category-top {
     margin-bottom: 30px;
+}
+
+.category-star {
+    width: 69%;
+    float: left;
+    text-align: left;
+    padding: 10px 16px;
+    padding-top: 7px;
+    padding-bottom: 4px;
+
 }
 
 .example {
@@ -664,6 +677,7 @@ a:hover {
     height: 100%;
 
 }
+
 .product-tabs {
     line-height: normal;
     margin: 0;
@@ -675,12 +689,14 @@ a:hover {
     width: 100%;
     border-bottom: 2px solid #e5e5e5;
     margin-top: 0px;
-    height: 35px;
+
     text-align: left;
 }
+
 .product-tabs li.active {
     background: none;
 }
+
 .product-tabs li {
     display: inline-block;
     height: auto;
@@ -690,12 +706,14 @@ a:hover {
     padding: 0;
     list-style: none;
 }
+
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
     border: none;
     border-bottom: 2px solid #305CB7;
     background: #305CB7;
     color: #fff;
 }
+
 .nav-tabs.product-tabs > li > a {
     margin-right: 0px;
     line-height: 1.42857143;
@@ -704,22 +722,26 @@ a:hover {
     padding: 10px 12px;
     letter-spacing: 0.5px;
     font-size: 14px;
-    font-weight: 500!important;
+    font-weight: 500 !important;
 }
+
 .tab-content {
     margin-bottom: 30px;
     margin-top: 15px;
     font-family: Arial;
     font-size: 15px;
 }
+
 .tab-content > .active {
     margin-top: 15px;
 }
+
 .right-hotline {
     padding: 15px;
     margin-bottom: 30px;
     border: 1px solid #DBDBDB;
 }
+
 .right-hotline h4 {
     border-bottom: 1px solid #DBDBDB;
     padding-bottom: 10px;
@@ -727,7 +749,58 @@ a:hover {
     text-transform: uppercase;
     color: #305CB7;
 }
+
 .right-hotline p {
     margin-top: 10px;
     font-size: 14px;
+}
+
+.product-shop {
+    margin-top: 0;
+    position: relative;
+}
+
+.product-name {
+    border-bottom: 1px #ddd dashed;
+}
+
+.product-name h1 {
+    font-size: 20px;
+    color: #305CB7;
+    margin: 0 0 2px;
+    text-align: left;
+    line-height: 1.2em;
+    padding-bottom: 12px;
+    letter-spacing: -1px;
+    font-weight: 500;
+    font-family: 'Arial', sans-serif;
+}
+
+.product-shop .ratings {
+    padding: 5px 0;
+    margin: 0;
+    border-bottom: 1px #ddd dashed;
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 30px;
+    color: #666;
+}
+
+.product-shop .ratings p {
+    margin: 0px;
+}
+
+.product-shop .ratings .rating-links {
+    margin-bottom: 12px;
+    display: inline;
+}
+
+.fb-comments, .fb-comments iframe[style], .fb-like-box, .fb-like-box iframe[style], .fb-comments span, .fb-comments iframe span[style], .fb-like-box span, .fb-like-box iframe span[style]
+{
+    width: 100% !important;
+}
+/*--------ibox----------*/
+
+.btn-set {
+    margin: 20px 20px;
 }
