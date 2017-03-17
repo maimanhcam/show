@@ -25,6 +25,9 @@ body {
     height: 120px;
 
 }
+.position-bottom {
+    padding-bottom: 30px;
+}
 
 .position-re-tour {
     margin-top: 10px;
@@ -50,10 +53,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-#menu-center {
-    padding: 0 5%;
 }
 
 .search-box {
@@ -124,29 +123,57 @@ body {
 #menu-center > li > a {
     font-size: 14px;
 }
-
-@media (min-width: 1440px) {
+@media (max-width: 768px) {
     .address-heard {
         width: 100%;
         float: left;
-        padding-left: 170px;
-    }
-
-    #menu-center li {
-        padding: 0 55px;
+        padding-left: 20px;
     }
 }
-
-
-@media (min-width: 1900px) {
+@media (min-width: 768px) and (max-width: 992px) {
     .address-heard {
         width: 100%;
         float: left;
-        padding-left: 170px;
+        padding-left: 20px;
     }
-
     #menu-center li {
-        padding: 0 90px;
+        padding: 0 30px;
+    }
+    #search {
+        width: 67%;
+    }
+    .search-btn-bg{
+        width: 33%;
+    }
+}
+@media (min-width: 992px){
+    .address-heard {
+        width: 100%;
+        float: left;
+        padding-left: 20px;
+    }
+    #menu-center li{
+        padding: 0 30px;
+    }
+}
+@media (min-width: 1200px){
+    .address-heard {
+        width: 100%;
+        float: left;
+        padding-left: 50px;
+    }
+    #menu-center li{
+        padding: 0 50px;
+    }
+}
+@media (min-width: 1440px){
+    .address-heard {
+        width: 100%;
+        float: left;
+        padding-left: 100px;
+    }
+    #menu-center li{
+        padding: 0 50px;
     }
 }
 
@@ -599,22 +626,22 @@ a:hover {
     float: right;
 }
 
-/***** CSS Magic to Highlight Stars on Hover *****/
+/*!***** CSS Magic to Highlight Stars on Hover *****!*/
 
-.rating > input:checked ~ label, /* show gold star when clicked */
-.rating:not(:checked) > label:hover, /* hover current star */
-.rating:not(:checked) > label:hover ~ label {
-    color: #FFD700;
-}
+/*.rating > input:checked ~ label, !* show gold star when clicked *!*/
+/*.rating:not(:checked) > label:hover, !* hover current star *!*/
+/*.rating:not(:checked) > label:hover ~ label {*/
+    /*color: #FFD700;*/
+/*}*/
 
-/* hover previous stars in list */
+/*!* hover previous stars in list *!*/
 
-.rating > input:checked + label:hover, /* hover current star when changing rating */
-.rating > input:checked ~ label:hover,
-.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating > input:checked ~ label:hover ~ label {
-    color: #FFED85;
-}
+/*.rating > input:checked + label:hover, !* hover current star when changing rating *!*/
+/*.rating > input:checked ~ label:hover,*/
+/*.rating > label:hover ~ input:checked ~ label, !* lighten current selection *!*/
+/*.rating > input:checked ~ label:hover ~ label {*/
+    /*color: #FFED85;*/
+/*}*/
 
 .category-setwith img {
     width: 100%;
@@ -654,8 +681,8 @@ a:hover {
 
 .breadcrumb-bg {
     background-color: #ffffff;
-    padding-top: 10px;
-    padding-bottom: 15px;
+    padding-top: 15px;
+
 }
 
 .vid {
@@ -718,7 +745,7 @@ a:hover {
     margin-right: 0px;
     line-height: 1.42857143;
     border-radius: 0px;
-    border: none;
+
     padding: 10px 12px;
     letter-spacing: 0.5px;
     font-size: 14px;
@@ -798,6 +825,40 @@ a:hover {
 .fb-comments, .fb-comments iframe[style], .fb-like-box, .fb-like-box iframe[style], .fb-comments span, .fb-comments iframe span[style], .fb-like-box span, .fb-like-box iframe span[style]
 {
     width: 100% !important;
+}
+.price-block {
+    margin: 3px 0;
+    min-height: 20px;
+}
+.price-box {
+    border-bottom: 1px #ddd dashed;
+    display: block;
+    margin: 0 0 10px;
+    padding: 0 0 5px;
+}
+.price-box {
+    margin: 3px 0;
+    min-height: 20px;
+    text-align: left;
+}
+.special-price .price {
+    font-size: 15px;
+    color: #E33729;
+    font-weight: 600;
+}
+.button {
+    font-family: 'Roboto', sans-serif;
+    border: 1px #305CB7 solid;
+    background: #305CB7;
+    padding: 8px 18px;
+    transition: color 300ms ease-in-out 0s, background-color 300ms ease-in-out 0s, background-position 300ms ease-in-out 0s;
+}
+button.button span {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
 }
 /*--------ibox----------*/
 
